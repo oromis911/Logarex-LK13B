@@ -36,6 +36,7 @@ void OBISChannel::publish(const char *value) {
       value);
     return;
   }
+  ESP_LOGI("Value: ", value);
   publish_state(fvalue);
 }
 
